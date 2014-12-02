@@ -14,7 +14,7 @@ summary: "为了保证APK数据的完整性和不被篡改。现代手机系统�
 ``` java
 PackageInfo packageInfo = m_context.getPackageInfo(m_context.getPackageName() ,PackageManager.GET_SIGNATURES); 
 Signature[] signatures = packageInfo.signatures; 
-//检查签名信息是否是开发者的 
+//检查签名信息是否是开发者的<br> 
 ……    
 ```
 

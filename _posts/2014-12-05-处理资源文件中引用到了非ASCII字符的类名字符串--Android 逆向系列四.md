@@ -31,7 +31,6 @@ Android XML文件中字符串被以表格的形式存储在文件的头部。
 - 32-35 资源字符串内容位移。以帧头为基地址开始计算。(下图橙色框处)
 - 36-x 字符串位移地址表，4字节为一个数组，个数为前面计算出来的字符串个数。(下图褐色框处)
 - x+1- 字符串编码表。
-
 ![字符串表帧](https://raw.githubusercontent.com/eriklu/eriklu.github.io/master/images/android_xml.png)
 
 ##### 字符串编码表的项组成：
