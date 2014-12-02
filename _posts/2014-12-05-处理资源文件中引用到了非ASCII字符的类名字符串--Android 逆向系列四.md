@@ -32,14 +32,15 @@ Android XML文件中字符串被以表格的形式存储在文件的头部。
 - 36-x 字符串位移地址表，4字节为一个数组，个数为前面计算出来的字符串个数。(下图褐色框处)
 - x+1- 字符串编码表。
 
-![字符串表帧](https://github.com/eriklu/eriklu.github.io/blob/master/images/android_xml.png)
+![字符串表帧](https://raw.githubusercontent.com/eriklu/eriklu.github.io/master/images/android_xml.png)
 
 ##### 字符串编码表的项组成：
 
 - 00-01 字符串长度/2 （红线标注处）
 - 02-x 字符编码数据, x=2+字符串长度＊2（蓝线标注处）
 - x+1-x+2 0000为结尾字符（绿线标注处）
-![字符串项](https://github.com/eriklu/eriklu.github.io/blob/master/images/android_xml_string_item.png)
+![字符串项](https://raw.githubusercontent.com/eriklu/eriklu.github.io/master/images/android_xml_string_item.png)
+
 #### 解析处理Android XML文件中的字符串
 现在我们了解了字符串的存储位置和编码方式，就可以写代码来处理xml字符串了。
 
