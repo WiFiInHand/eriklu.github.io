@@ -6,7 +6,7 @@ tags: [Andorid, smali, tool]
 summary: "代码被混淆为a、b、c之类已经够逆向者头疼的了。但现在新的混淆工具更进一步把，还使用了ascii字符以外的字符。现在逆向工程师该怎么办？"
 ---
 
-### 战胜混淆后的非ASCII字符 -- Android 逆向系列三
+#### 引言
 代码被混淆为a、b、c之类已经够逆向者头疼的了。但现在新的混淆工具更进一步把，还使用了ascii字符以外的字符。
 
 这是利用了java代码支持用unicode做变量名的特性。
@@ -35,6 +35,7 @@ summary: "代码被混淆为a、b、c之类已经够逆向者头疼的了。但�
 这里我们把非ascii字符转变为他的16进制表示，在前面增加一个‘_’字符。连在一起的非ascii字符前面只使用一个‘_’字符。
 
 如果你愿意，也可以把非ascii字符用中文来映射。
+
 ``` java
 public static String formatProguardString(String str){ 
     try {
@@ -63,12 +64,14 @@ public static String formatProguardString(String str){
     }            
     return str;    
 }
-```    
+```   
+
 ##### 修改apktool的代码
 代码下载地址:
 修改例子：
 以brut.apktool.smali/dexlib2/src/main/java/org/jf/dexlib2/dexbacked/DexBackedClassDef.java文件为例：
 需要修改三个函数：getType()、getSuperclass()、getInterfaces()
+
 ``` java
     @Nonnull    
     @Override   
@@ -105,6 +108,7 @@ public static String formatProguardString(String str){
         return ImmutableSet.of();  
     }
 ```
+
 ###### 要修改的代码：
 
 - brut.apktool.smali/dexlib2/src/main/java/org/jf/dexlib2/dexbacked/DexBackedAnnotationElement.java

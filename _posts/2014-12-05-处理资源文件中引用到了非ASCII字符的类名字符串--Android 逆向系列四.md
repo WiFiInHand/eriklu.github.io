@@ -6,7 +6,7 @@ tags: [Andorid, smali]
 summary: "上一篇中提到了如何映射处理CLASS代码中的非ASCII代码。但是随之而来出现了一个新问题。就是有时候AndroidManifest.xml文件和布局文件中会引用到这些类。现在类型被映射了，而xml文件中相应的字符串没有被修改。那么重新打包签名安装后运行时会出现找不到相关的类，导致应用运行失败。现在我们就来解决这个问题。"
 ---
 
-### 处理资源文件中引用到了非ASCII字符的类名字符串--Android 逆向系列四
+
 #### 处理资源文件中引用到了非ASCII字符的类名字符串
 
 上一篇中提到了如何映射处理CLASS代码中的非ASCII代码。但是随之而来出现了一个新问题。就是有时候AndroidManifest.xml文件和布局文件中会引用到这些类。现在类型被映射了，而xml文件中相应的字符串没有被修改。那么重新打包签名安装后运行时会出现找不到相关的类，导致应用运行失败。
@@ -32,12 +32,14 @@ Android XML文件中字符串被以表格的形式存储在文件的头部。
 - 36-x 字符串位移地址表，4字节为一个数组，个数为前面计算出来的字符串个数。(下图褐色框处)
 - x+1- 字符串编码表。
 
+![字符串表帧](https://github.com/eriklu/eriklu.github.io/blob/master/images/android_xml.png)
+
 ##### 字符串编码表的项组成：
 
 - 00-01 字符串长度/2 （红线标注处）
 - 02-x 字符编码数据, x=2+字符串长度＊2（蓝线标注处）
 - x+1-x+2 0000为结尾字符（绿线标注处）
-
+![字符串项](https://github.com/eriklu/eriklu.github.io/blob/master/images/android_xml_string_item.png)
 #### 解析处理Android XML文件中的字符串
 现在我们了解了字符串的存储位置和编码方式，就可以写代码来处理xml字符串了。
 
