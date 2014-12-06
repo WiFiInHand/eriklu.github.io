@@ -31,7 +31,7 @@ summary: "“Locus Map Pro - Outdoor GPS”是一款户外徒步软件。具有�
 java -jar apktool2.0.jar d Locus3.40.apk -f -o outdir
 ```
 输出结果如下：
-I: Using Apktool 2.0.0-Beta7 on Locus3.40.apk
+>I: Using Apktool 2.0.0-Beta7 on Locus3.40.apk
 I: Loading resource table...
 I: Decoding AndroidManifest.xml with resources...
 I: Loading resource table from file: C:\Users\monkey\apktool\framework\1.apk
