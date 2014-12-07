@@ -9,6 +9,7 @@ summary: "前面我们发现用apktool把APK解包后，无法重新打包。这
 ### “Locus Map Pro - Outdoor GPS”  APK Crack 分享（2）
 #### 问题描述
 前面我们发现用apktool把APK解包后，无法重新打包。这是什么原因呢？分析发现这是因为开发者在生成APK包的时候对代码进行了混淆。很多Java类的类名、方法名、字段名都被替换为非ascii字符。导致重新打包失败。例如上一篇我们修改的签名验证的函数就是如此。
+
 ``` smali
 .method private static ･([Landroid/content/pm/Signature;)Z
     .locals 2
