@@ -2,7 +2,7 @@
 layout : post
 title : "IOS7、IOS8 autoLayout的一个区别"
 category: "逆向工程"
-tags: [Andorid, smali]
+tags: [ios, autolayout]
 summary: "加载view并执行自动布局时IOS7和IOS8机制是有差别的。在IOS7上，**viewDidLoad**执行时，自动布局应该已经执行完毕。 在IOS 8上， **viewDidLoad**执行时，自动布局尚未完成， **viewWillAppear**执行时，自动布局才完成。这是界面开始显示。"
 ---
 
