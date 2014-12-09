@@ -9,7 +9,7 @@ summary: "加载view并执行自动布局时IOS7和IOS8机制是有差别的。�
 ### IOS7、IOS8 autoLayout的一个区别
 最近学习**autolayout**。根视图有一个子视图。当一个点击事件发生时，子视图从屏幕底部移动到顶部。在**storyboard**里面设计子视图约束时，没办法设置顶部约束常量为一个屏幕高度。所以该在**viewDidLoad**里面来设置。代码如下：
 
-``` 
+``` objective-c
 - (void)viewDidLoad {
     ……
     NSLayoutConstraint *myConstaint = nil;
