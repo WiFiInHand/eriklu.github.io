@@ -3,8 +3,7 @@ layout : post
 title : "Iios IAP Receipt 字段分析"
 category: "iOS开发"
 tags: [ios, iap, receipt]
-summary: "objc.io上也有一篇文章Receipt Validation介绍了如何进行recipt本地验证。但提供的例子中没有获取iap的字段的代码。
-对于不熟悉asn语法的同学，分析这块信息也是个不小的挑战。"
+summary: "objc.io上也有一篇文章Receipt Validation介绍了如何进行recipt本地验证。但提供的例子中没有获取iap的字段的代码。对于不熟悉asn语法的同学，分析这块信息也是个不小的挑战。"
 ---
 
 ### ios IAP Receipt 字段分析
