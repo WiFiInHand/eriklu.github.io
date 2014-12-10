@@ -36,7 +36,7 @@ summary: "代码被混淆为a、b、c之类已经够逆向者头疼的了。但�
 
 如果你愿意，也可以把非ascii字符用中文来映射。
 
-``` java
+```java
 public static String formatProguardString(String str){ 
     try {
         byte[] bytes = str.getBytes("UTF-8");
