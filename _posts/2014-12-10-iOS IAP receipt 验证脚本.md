@@ -8,7 +8,7 @@ summary: "一个iap reciept脚本验证工具。完全借助操作系统自带�
 
 以前写的一个iap reciept脚本验证工具。完全借助操作系统自带的工具。
 
-```bash
+```
 #!/bin/sh
 #echo $#
 #把一个App App Store的IPA返回的recipt的二进制格式文件发往服务器验证
@@ -46,5 +46,5 @@ fi
 ```
 
 
-[下载脚本文件](https://raw.githubusercontent.com/eriklu/eriklu.github.io/master/images/iap_receipt_valid.sh)
+[下载脚本文件](https://raw.githubusercontent.com/eriklu/eriklu.github.io/master/resources/iap_receipt_valid.sh)
 [下载iap receipt文件例子](https://raw.githubusercontent.com/eriklu/eriklu.github.io/master/resources/iap_receipt_example.dat)
