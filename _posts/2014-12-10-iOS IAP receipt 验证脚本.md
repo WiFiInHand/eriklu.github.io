@@ -8,7 +8,7 @@ summary: "一个iap reciept脚本验证工具。完全借助操作系统自带�
 
 以前写的一个iap reciept脚本验证工具。完全借助操作系统自带的工具。
 
-``` shell
+``` Shell
 #!/bin/sh
 #echo $#
 #把一个App App Store的IPA返回的recipt的二进制格式文件发往服务器验证
