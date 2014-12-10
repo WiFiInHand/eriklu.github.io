@@ -13,7 +13,7 @@ summary: "objc.io上也有一篇文章Receipt Validation介绍了如何进行rec
 
 下面是我根据文章中的代码写的获取iap字段的代码。
 
-```objc
+``` objc
 ……
 case 5:
                     // Computed GUID (SHA-1 Hash)
