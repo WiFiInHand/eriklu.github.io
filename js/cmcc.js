@@ -18,6 +18,26 @@ var location = {
 	china_hk = 1;
 	china_taiwan = 2;
 	china_macow = 3;
+	Singapore = 4;
+	Thailand ＝ 5;
+}
+
+cmcc.homepage = function(ssid){
+
+	var fields = {};
+	if("CMCC".toLowerCase() == ssid.toLowerCase()){
+		fields = {"userAgent":""};
+	}else if("ChinaNet".toLowerCase() == ssid.toLowerCase()){
+		fields = {"userAgent":""};
+	}
+
+	return {
+			"result" : 0,
+			"action" : "next",
+			"url" = "http://www.baidu.com",
+			"httpMethod":"GET",
+			"fields" : fields,
+		};
 }
 
 cmcc.parseLoginInputPage = function(url1, url2, headers, html, ssid){
