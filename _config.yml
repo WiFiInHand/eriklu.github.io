@@ -6,13 +6,7 @@ pygments: true
 safe: true
 auto: false 
 redcarpet:
-extensions:
-- with_toc_data
-- hard_wrap
-- no_intra_emphasis
-- tables
-- fenced_code_blocks
-- autolink
+
 
 paginate: 15
 paginate_path: "page:num"
